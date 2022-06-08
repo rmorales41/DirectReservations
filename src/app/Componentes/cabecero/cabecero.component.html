@@ -1,0 +1,92 @@
+<!-- BARRA SUPERIOR CAMBIO DE COMPAÑIA, NOTIFICACIONES Y MENU USUARIO -->
+<nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="home.html">DR </a>
+        <div class="vr bg-white bg-opacity-100 desapareceMovil" style="width: 0.1em;"></div>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white" style="font-weight: bold;"id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Casa Bonita en Escazú <i class="fa-solid fa-angle-down ms-1"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item active" href="#">Casa Bonita en Escazú</a></li>
+                        <li><a class="dropdown-item" href="#">Hotel Playa Uvita</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="btn-group">
+                <span class="fa-stack fa-1x" style="vertical-align: top; font-size: 1.5em;">
+                    <i class="fa-solid fa-circle fa-stack-2x fa-inverse" ></i>
+                    <i class="fa-solid fa-bell fa-stack-1x"></i>
+                </span>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn border-0 text-white" style="font-weight: bold; font-size: 1.5em;"id="defaultDropdown" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                    <span class="fa-stack fa-1x" style="vertical-align: top;">
+                        <i class="fa-solid fa-circle fa-stack-2x bttn-danger"></i>
+                        <i class="fa-solid fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end pb-0" style="width: 15rem;" aria-labelledby="defaultDropdown">
+                    <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                    <li><a class="dropdown-item" href="#">Crear Habitación</a></li>
+                    <li><a class="dropdown-item" href="#">Crear Registro</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                    <li><hr class="dropdown-divider mb-0"></li>
+                    <li><a class="dropdown-item text-center bg-oscuro text-white rounded-bottom" href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- FIN DE BARRA SUPERIOR -->
+
+<!-- BARRA SUPERIOR SECUNDARIA: CAMBIAR ENTRE MODULOS -->
+<nav class="nav navsuperior">
+    <ul class="nav nav-pills w-75 navsuperior">
+        <li class="nav-item submenu">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <div class="container-fluid mt-2">
+                    <i class="fa-solid fa-house fa-2xl"></i>
+                </div>
+                <div class="container-fluid mt-1">
+                    <span class="desapareceMovil">Inicio</span> 
+                </div>
+            </a>
+        </li>
+        <li class="nav-item submenu">
+            <a class="nav-link " routerLink="/monitoreo" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <div class="container-fluid mt-2">
+                    <i class="fa-solid fa-desktop fa-2xl"></i>
+                </div>
+                <div class="container-fluid mt-1">
+                    <span class="desapareceMovil">Monitoreo</span> 
+                </div>
+            </a>
+        </li>
+        <li class="nav-item submenu">
+            <a class="nav-link" routerLink="/calendario" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <div class="container-fluid mt-2">
+                    <i class="fa-regular fa-calendar-days fa-2xl"></i>
+                </div>
+                <div class="container-fluid mt-1">
+                    <span class="desapareceMovil">Calendario</span> 
+                </div>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav w-25 align-self-center justify-content-center">
+        <li class="nav-item submenu">
+            <a href="home.html" class="nav-link bttn-jelly bttn-sm boton_oscuro">Nuevo Registro</a>
+        </li>
+    </ul>
+</nav>
+<!-- FIN DE BARRA SUPERIOR SECUNDARIA -->
+<br>
