@@ -1,5 +1,25 @@
 <?php
-include_once('base_datos.php');
+
+
+$hostname   = "SERVER-TI";
+$usuariodb  = "root";
+$passworddb = "";
+$dbnombre   = "Usuarios";
+
+$conn = sqlsrv_connect($hostname,$usuariodb,$passworddb,$dbnombre);
+
+if($conn){
+    echo "conexion establecida.<br/>";
+
+}else{
+    echo "Conexion no se pudo establecer.<br/>";
+    die(print_r(sqlsrv_errors(),true));
+
+}
+
+
+
+//include_once('base_datos.php');
 
 // se recibe los datos de ingreso 
 $Usuario=$_POST['Usuario'];
@@ -28,7 +48,7 @@ if ($result==1)
 else if($nr==0)
 {
     
-    (header("location:login.html"))
+    (header("location:login.html"));
     
     
 }

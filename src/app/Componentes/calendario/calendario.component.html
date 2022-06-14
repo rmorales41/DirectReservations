@@ -1,0 +1,54 @@
+<br>
+<!-- ENCABEZADO Y BOTONES -->
+<div class="container-fluid ">
+    <div class="row row-cols-auto d-sm-flex justify-content-start justify-content-center justify-content-md-start">
+      <div class="col-xl-6 col-lg-5 col-md-11 col-auto">
+        <div class="container-fluid text-md-start text-center">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item"><span class="text-bold">Calendario de Reservaciones</span></li>
+                </ol>
+            </nav>
+            <h2 class="text-bold">{{ fechaHoy }}</h2>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-6 mb-2">
+        <a href="" class="nav-link bttn-jelly bttn-sm boton_primario">Disponibilidad (7)</a>
+      </div>
+      <div class="col mb-2">
+        <a href="" class="nav-link bttn-jelly bttn-sm boton_BN ps-3 pe-3">?</a>
+      </div>
+      <div class="col-lg-1 col-md-2 col-3 mb-2">
+        <a href="" class="nav-link bttn-jelly bttn-sm boton_BN">Filtrar</a>
+      </div>
+      <div class="col mb-2">
+        <div class="btn-group">
+          <a class="nav-link bttn-jelly bttn-sm boton_BN" id="defaultDropdown" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">Exportar <i class="fa-solid fa-angle-down ms-1"></i></a>
+          <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="defaultDropdown">
+              <li><a class="dropdown-item" href="#">Exportar a Excel</a></li>
+              <li><a class="dropdown-item" href="#">Imprimir</a></li>
+          </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+<!-- FIN ENCABEZADO Y BOTONES -->
+
+<!-- CALENDARIO -->
+<div class="container-fluid m-0 p-0">
+    <div id="menu">
+        <span id="menu-navi">
+            <button type="button" class="btn btn-default btn-sm move-today" data-action="move-today">Today</button>
+            <button type="button" class="btn btn-default btn-sm move-day" data-action="move-prev">
+                <i class="calendar-icon ic-arrow-line-left" data-action="move-prev"></i>
+            </button>
+            <button type="button" class="btn btn-default btn-sm move-day" data-action="move-next">
+                <i class="calendar-icon ic-arrow-line-right" data-action="move-next"></i>
+            </button>
+        </span>
+        <span id="renderRange" class="render-range"></span>
+    </div>
+  
+    <div id="calendar" class="m-0 p-0 w-100"></div>
+</div>
+<!-- FIN CALENDARIO -->

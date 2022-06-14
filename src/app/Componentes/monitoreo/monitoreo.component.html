@@ -1,0 +1,172 @@
+<br>
+<!-- ENCABEZADO Y BOTONES -->
+<div class="container-fluid ">
+  <div class="row row-cols-auto d-sm-flex justify-content-start justify-content-center justify-content-md-start">
+    <div class="col-xl-5 col-lg-4 col-md-11 col-auto">
+      <div class="container-fluid">
+        <h2 class="text-bold">Monitor de Reservaciones</h2>
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-2 col-3 mb-2">
+      <a href="" class="nav-link bttn-jelly bttn-sm boton_oscuro">Editar</a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-6 mb-2">
+      <a href="" class="nav-link bttn-jelly bttn-sm boton_primario">Disponibilidad (7)</a>
+    </div>
+    <div class="col mb-2">
+      <a href="" class="nav-link bttn-jelly bttn-sm boton_BN ps-3 pe-3">?</a>
+    </div>
+    <div class="col-lg-1 col-md-2 col-3 mb-2">
+      <a href="" class="nav-link bttn-jelly bttn-sm boton_BN">Filtrar</a>
+    </div>
+    <div class="col mb-2">
+      <div class="btn-group">
+        <a class="nav-link bttn-jelly bttn-sm boton_BN" id="defaultDropdown" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">Exportar <i class="fa-solid fa-angle-down ms-1"></i></a>
+        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="defaultDropdown">
+            <li><a class="dropdown-item" href="#">Exportar a Excel</a></li>
+            <li><a class="dropdown-item" href="#">Imprimir</a></li>
+        </ul>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- FIN ENCABEZADO Y BOTONES -->
+
+<!-- EMPIEZAN LOS TABS PARA VER LAS TARJETAS DE EN CURSO, PROXIMAS... -->
+<div class="container-fluid mt-3">
+  <div class="row justify-content-center">
+    <div class="col">
+      <ul class="nav nav-pills nav-fill navTabs" id="pills-tab" role="tablist">
+        <li
+          class="nav-item navTabsItem mb-1 mt-1 me-1 ms-1"
+          role="presentation">
+          <a
+            class="nav-link"
+            id="pills-proximas-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-proximas"
+            type="button"
+            role="tab"
+            aria-controls="pills-proximas"
+            aria-selected="false"
+            >Todas (11)
+          </a>
+        </li>
+        <li
+          class="nav-item navTabsItem mb-1 mt-1 me-1 ms-1"
+          role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-enCurso-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-enCurso"
+            type="button"
+            role="tab"
+            aria-controls="pills-enCurso"
+            aria-selected="true"
+            >En Curso (3)
+          </a>
+        </li>
+        <li
+          class="nav-item navTabsItem mb-1 mt-1 me-1 ms-1"
+          role="presentation">
+          <a
+            class="nav-link"
+            id="pills-proximas-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-proximas"
+            type="button"
+            role="tab"
+            aria-controls="pills-proximas"
+            aria-selected="false"
+            >Próximas (0)
+          </a>
+        </li>
+        <li
+          class="nav-item navTabsItem mb-1 mt-1 me-1 ms-1"
+          role="presentation">
+          <a
+            class="nav-link"
+            id="pills-solicitudes-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-solicitudes"
+            type="button"
+            role="tab"
+            aria-controls="pills-solicitudes"
+            aria-selected="false"
+            >Solicitudes (2)
+          </a>
+        </li>
+        <li
+          class="nav-item navTabsItem mb-1 mt-1 me-1 ms-1"
+          role="presentation">
+          <a
+            class="nav-link"
+            id="pills-finalizadas-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-finalizadas"
+            type="button"
+            role="tab"
+            aria-controls="pills-finalizadas"
+            aria-selected="false"
+            >Finalizadas (23)
+          </a>
+        </li>
+        <li
+          class="nav-item navTabsItem mb-1 mt-1 me-1 ms-1"
+          role="presentation">
+          <a
+            class="nav-link"
+            id="pills-disponibles-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-disponibles"
+            type="button"
+            role="tab"
+            aria-controls="pills-disponibles"
+            aria-selected="false"
+            >Disponibles (7)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- TERMINAN LOS TABS PARA VER LAS TARJETAS DE EN CURSO, PROXIMAS... -->
+
+
+<div class="container-fluid mt-2">
+    <div class="table-responsive border-primario b-1">
+      <table class="table">
+        <thead class="bg-oscuro text-white">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"># Reserva</th>
+            <th scope="col"># Grupo</th>
+            <th scope="col">Huesped Titular</th>
+            <th scope="col"><i class="fa-solid fa-user"></i></th>
+            <th scope="col">Habitación</th>
+            <th scope="col">Check-In</th>
+            <th scope="col">Check-Out</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Precio Total</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <div class="container">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                </div>
+                <th scope="row">000000015</th>
+                <td>1</td>
+                <td>Jose Antonio Esquivel</td>
+                <td>4</td>
+                <td>#1 Standar Suite</td>
+                <td>06/04/2022</td>
+                <td>10/04/2022</td>
+                <td class="fw-bold text-primary">En Curso</td>
+                <td class="fw-bold">₡145.000</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

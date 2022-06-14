@@ -12,11 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="login">               
+<body class="login">
     <div class="container position-absolute top-50 start-50 translate-middle" style="max-width: 45em;">
         <h1 class="text-center text-white">Direct Reservations</h1>
         <div class="card shadow" >
-            <div class="row g-10 ">
+            <div class="row g-0 ">
                 <div class="col-md-5 bg-black bg-opacity-10">
                     <div class="card-body">
                         <h2 class="card-title mt-2 mb-4 ">Bienvenido</h2>
@@ -27,25 +27,23 @@
                             <a href="http://www.facebook.com/SipavSA" class="btn bttn-minimal bttn-sm text-primary mb-1 mt-2"><i class="fa-brands fa-facebook fa-shake fa-lg" style="--fa-animation-duration: 7s; --fa-animation-iteration-count: 1;"></i> SipavSA</a>
                         </div>
                     </div>
-                </div>                
+                </div>
+                
                 <div class="col-md-7">
                     <div class="card-body">
                         <h2 class="card-title mt-2 mb-4">Iniciar Sesión</h2>
-                        <form name="form" action="conectar.php" method="post">
+                        <form action="">
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="usuario" aria-describedby="Usuario" placeholder="Usuario" name="Usuario" required>
+                                <input type="usuario" class="form-control" id="usuario" aria-describedby="Usuario" placeholder="Usuario" required>
                             </div>
                             <div class="mb-3">
-                               <input type="password" class="form-control" id="password" placeholder="Contraseña" name="Contrasena" required> 
+                                <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
                             </div>
                             <div class="container-fluid">
                                 <div class="row g-0 justify-content-end">
                                     <div class="col-sm-5 col-lg-auto">
-                                         <button type="submit" id="conectar" name ="conectar" class="btn bttn-jelly bttn-md bttn-primary bttn-block">Continuar</button> 
-                                    <!-- <a href="home.html" id="boton" class="btn bttn-jelly bttn-md bttn-primary bttn-block">Continuar</a> -->                                        
-                                    </div>
-                                    <div class="col-15 col-lg-auto">
-                                        <button type="button" id="salir" class="btn bttn-jelly bttn-md bttn-primary bttn-block">  Salir   </button> 
+                                        <!-- <button type="submit" id="boton" class="btn bttn-jelly bttn-md bttn-primary bttn-block">Continuar</button> -->
+                                        <a href="home.html" id="boton" class="btn bttn-jelly bttn-md bttn-primary bttn-block">Continuar</a>
                                     </div>
                                 </div>
                             </div>
